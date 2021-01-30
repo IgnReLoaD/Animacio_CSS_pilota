@@ -3,30 +3,42 @@ body {
 }
 
 h1 {
-    color: white;
+    position: relative;
+    margin-left: 150px;
+    color: goldenrod;
     align-content: center;
+    font-family: arial;
 }
 
 /* definim la classe de la Caixa que contindrà el terreny de joc */
 .pista {
+    
+  /* dimensions */
     margin: 40px auto;
     width: 800px;
     height: 600px;
     position: relative;
+  /* colors  */
+    background-color: #e28c53;
+    box-shadow: inset 0 0 40px #000;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid #1D0;
     overflow: hidden;
 }
 
 /* definim la Pilota amb el selector b dins de la classe de la Caixa */
 .pista b {
+  /* dimensions */
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: white;
     position: absolute;    
-    /* transform: translate(50px, 50px); */
+  /* colors  */
+    background-color: yellow;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+  /* efectes */  
     animation: moveX 2.85s linear 0s infinite alternate, moveY 2.05s linear 0s infinite alternate;
+    /* transform: translate(50px, 50px); */
 }
 
 /* keyframes ens ajuda a captar la sensacio de moviment horitzontal  X  */
